@@ -21,7 +21,13 @@
     "stylelint-config-standard": "^17.0.0"
   },
   "scripts": {
-    "lint-staged": "$(yarn bin)/lint-staged"
+    "lint-staged": "$(yarn bin)/lint-staged",
+    "rubocop": "rubocop -a"
+  },
+  "rubocop": {
+    ".": [
+      "rubocop -a"
+    ]
   },
   "lint-staged": {
     "config/webpack/**/*.js": [
