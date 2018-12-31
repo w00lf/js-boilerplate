@@ -24,11 +24,6 @@
     "lint-staged": "$(yarn bin)/lint-staged",
     "rubocop": "rubocop -a"
   },
-  "rubocop": {
-    ".": [
-      "rubocop -a"
-    ]
-  },
   "lint-staged": {
     "config/webpack/**/*.js": [
       "prettier --write",
